@@ -75,3 +75,73 @@ form button:hover{
 form button:active{
     transform:scale(0.97);
 }
+.main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.card-container{
+    width:280px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:25px 20px;
+    text-align:center;
+    box-shadow:0 12px 28px rgba(0,0,0,0.45);
+    animation:cardShow 0.4s ease;
+}
+
+/* Profile picture */
+.profile-pic{
+    width:120px;
+    height:120px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    border:3px solid #00f2fe;
+    box-shadow:0 0 15px #00f2fe;
+    overflow:hidden;
+}
+
+.profile-pic img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Name */
+.name{
+    color:#fff;
+    font-size:22px;
+    margin-top:8px;
+}
+
+/* Occupation */
+.occupation{
+    color:#00f2fe;
+    font-weight:500;
+    font-size:15px;
+    margin:6px 0 10px;
+}
+
+/* Info */
+.info{
+    color:#ddd;
+    font-size:13px;
+    line-height:1.5;
+}
+
+/* Animation */
+@keyframes cardShow{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
